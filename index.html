@@ -9,7 +9,115 @@
   <link rel="stylesheet" href="./assets/scss/styles.css">
   <title>Audio Player</title>
 </head>
-  <h1>AUDIO PLAYER</h1>
+<div class="root">
+  <h1>
+    Music Player
+  </h1>
+  <main class="app">
+    <div class="content">
+      <div class="handling">
+
+        <div class="handling-sound" title="Volume">
+          <svg class="icon-sound">
+            <use xlink:href="./assets/images/sprite.svg#sound" />
+          </svg>
+
+          <div class="volume">
+            <input min="0" max="1" step="0.1" type="range" value="0.5" name="volume" class="controls-volume">
+          </div>
+        </div>
+
+        <div class="handling-repeat" title="Repeat">
+          <svg class="icon-repeat">
+            <use xlink:href="./assets/images/sprite.svg#repeat" />
+          </svg>
+        </div>
+
+        <div class="handling-shuffle" title="Shuffle">
+          <svg class="icon-shuffle">
+            <use xlink:href="./assets/images/sprite.svg#shuffle" />
+          </svg>
+        </div>
+
+      </div>
+      <div class="current">
+        <div class="current-image" style="background-image: url(./assets/images/beat1.jpg)"></div>
+        <div class="current-info">
+          <div class="current-info__top">
+            <div class="current-info__titles">
+              <h2 class="current-info__group">Slipknot</h2>
+              <h3 class="current-info__track">Duality</h3>
+            </div>
+            <div class="current-info__year">2015</div>
+          </div>
+          <div class="controls">
+            <div class="controls-buttons">
+              <button class="controls-button controls-prev">
+                <svg class="icon-arrow">
+                  <use xlink:href="./assets/images/sprite.svg#arrow" />
+                </svg>
+              </button>
+
+              <button class="controls-button controls-prev">
+                <svg class="icon-pause">
+                  <use xlink:href="./assets/images/sprite.svg#pause" />
+                </svg>
+                <svg class="icon-play">
+                  <use xlink:href="./assets/images/sprite.svg#play" />
+                </svg>
+              </button>
+
+              <button class="controls-button controls-next">
+                <svg class="icon-arrow">
+                  <use xlink:href="./assets/images/sprite.svg#arrow" />
+                </svg>
+              </button>
+            </div>
+
+            <div class="controls-progress">
+              <div class="progress">
+                <div class="progress-current" style="width: 20%;"></div>
+              </div>
+
+              <div class="timeline">
+                <span class="timeline-start">00:00</span>
+                <span class="timeline-end">03:50</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="list">
+        <p class="list-title">ALL TRACKS</p>
+
+        <div class="items">
+          <div class="item">
+            <div class="item-image" style="background-image: url(./assets/images/beat1.jpg)"></div>
+
+            <div class="item-titles">
+              <h2 class="item-group">Slipknot</h2>
+              <h3 class="item-track">Duality</h3>
+            </div>
+
+            <p class="item-duration">03:50</p>
+            <p class="item-genre">Nu Metal</p>
+            <button class="item-play">
+              <!-- <svg class="icon-pause">
+                <use xlink:href="./assets/images/sprite.svg#pause" />
+              </svg> -->
+              <svg class="icon-play">
+                <use xlink:href="./assets/images/sprite.svg#play" />
+              </svg>
+            </button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+
 <body>
 
 </body>
