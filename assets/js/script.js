@@ -8,7 +8,7 @@ const AudioController = {
     playing: false,
     repeating: false,
     sound: true,
-    volume: 0.5,
+    volume: 0.3,
   },
 
   init() {
@@ -127,19 +127,9 @@ const AudioController = {
       this.state.repeating = !repeating;
     });
 
-    // mute sound
-    // this.volumeButton.addEventListener("click", () => {
-    //   const {
-    //     sound,
-    //     current: { audio },
-    //   } = this.state;
-    //   this.state.sound = !sound;
-    //   // sound ? (audio.volume = 0) : this.state.current.sound;
-    //   sound ? (audio.volume = 0) : audio.volume = 0.5;
-    //   console.log(this.state.current);
-    // });
-
-    this.volumeBar.addEventListener("mousemove", ({ target: { value } }) => {
+    this.volumeBar.addEventListener("mousemove", (event) => {
+      const { value } = event.target;
+      event.stopImmediatePropagation();
       const { current } = this.state;
       if (current) {
         this.state.volume = value;

@@ -1,6 +1,4 @@
-// @import "./fonts.scss";
-
-$primary: #ff874a;
+$primary: #f6ffbd;
 
 @mixin coverBg() {
   background-size: cover;
@@ -44,7 +42,7 @@ body {
 }
 
 .app {
-  background: linear-gradient(180deg, #6192c4 0%, #07386b 100%);
+  background: linear-gradient(180deg, #47cab6 0%, #292050 100%);
   border-radius: 12px;
   padding: 24px 25px;
   margin-top: 34px;
@@ -57,7 +55,7 @@ h1 {
   font-size: 32px;
   text-transform: uppercase;
   line-height: 37px;
-  color: #ffffff;
+  color: $primary;
 }
 
 svg {
@@ -97,7 +95,7 @@ svg {
       font-weight: 700;
       font-size: 24px;
       line-height: 28px;
-      color: #ffffff;
+      color: $primary;
       margin-top: 2px;
     }
 
@@ -153,15 +151,15 @@ svg {
     display: flex;
     align-items: center;
     justify-content: center;
-    column-gap: 45px;
+    column-gap: 30px;
   }
 
   &-button {
     cursor: pointer;
 
     svg {
-      width: 27px;
-      height: 27px;
+      width: 30px;
+      height: 30px;
     }
 
     &.playing {
@@ -179,7 +177,7 @@ svg {
 
   &-next {
     display: block;
-    transform: scale(-1, 1);
+    transform: rotate(180deg);
   }
 
   &-progress {
@@ -243,7 +241,7 @@ svg {
 
   &:hover {
     svg {
-      transform: rotate(360deg);
+      transform: scale(1.1);
     }
   }
 
@@ -295,7 +293,7 @@ svg {
       width: 32px;
       height: 32px;
       fill: $primary;
-      transition: transform 0.5s ease-in-out;
+      transition: transform 0.2s ease-in-out;
     }
   }
 }
@@ -331,7 +329,7 @@ svg {
   &-repeat {
     &.active {
       svg {
-        fill: #a43700;
+        fill: #aebf41;
       }
     }
   }

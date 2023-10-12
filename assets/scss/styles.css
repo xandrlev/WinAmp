@@ -14,7 +14,7 @@ body {
 }
 
 .app {
-  background: linear-gradient(180deg, #6192c4 0%, #07386b 100%);
+  background: linear-gradient(180deg, #47cab6 0%, #292050 100%);
   border-radius: 12px;
   padding: 24px 25px;
   margin-top: 34px;
@@ -27,7 +27,7 @@ h1 {
   font-size: 32px;
   text-transform: uppercase;
   line-height: 37px;
-  color: #ffffff;
+  color: #f6ffbd;
 }
 
 svg {
@@ -68,7 +68,7 @@ svg {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
-  color: #ffffff;
+  color: #f6ffbd;
   margin-top: 2px;
 }
 .current-info__group {
@@ -88,17 +88,17 @@ svg {
   margin-top: auto;
 }
 .controls .icon-arrow {
-  fill: #ff874a;
+  fill: #f6ffbd;
 }
 .controls .icon-pause {
   fill: none;
-  stroke: #ff874a;
+  stroke: #f6ffbd;
   display: none;
   width: 40px;
   height: 40px;
 }
 .controls .icon-play {
-  fill: #ff874a;
+  fill: #f6ffbd;
   display: block;
   width: 40px;
   height: 40px;
@@ -107,24 +107,24 @@ svg {
   cursor: pointer;
 }
 .controls svg:not(.icon-pause):hover {
-  fill: #ffba97;
+  fill: white;
 }
 .controls svg:not(.icon-pause):active {
-  fill: #fd5500;
+  fill: #ecff71;
 }
 .controls-buttons {
   display: flex;
   align-items: center;
   justify-content: center;
-  -moz-column-gap: 45px;
-       column-gap: 45px;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
 }
 .controls-button {
   cursor: pointer;
 }
 .controls-button svg {
-  width: 27px;
-  height: 27px;
+  width: 30px;
+  height: 30px;
 }
 .controls-button.playing .icon-pause {
   display: block;
@@ -134,7 +134,7 @@ svg {
 }
 .controls-next {
   display: block;
-  transform: scale(-1, 1);
+  transform: rotate(180deg);
 }
 .controls-progress {
   margin-top: 18px;
@@ -149,7 +149,7 @@ svg {
   overflow: hidden;
 }
 .progress-current {
-  background: #ff874a;
+  background: #f6ffbd;
   border-radius: 12px;
   position: absolute;
   top: 0;
@@ -191,7 +191,7 @@ svg {
   position: relative;
 }
 .item:hover svg {
-  transform: rotate(360deg);
+  transform: scale(1.1);
 }
 .item:before {
   content: "";
@@ -235,8 +235,8 @@ svg {
 .item-play svg {
   width: 32px;
   height: 32px;
-  fill: #ff874a;
-  transition: transform 0.5s ease-in-out;
+  fill: #f6ffbd;
+  transition: transform 0.2s ease-in-out;
 }
 
 .handling {
@@ -252,28 +252,28 @@ svg {
 .handling .icon-repeat, .handling .icon-sound {
   width: 24px;
   height: 24px;
-  fill: #ff874a;
+  fill: #f6ffbd;
 }
 .handling .icon-repeat:hover, .handling .icon-sound:hover {
-  fill: #ffba97;
+  fill: white;
 }
 .handling .icon-repeat:active, .handling .icon-sound:active {
-  fill: #fd5500;
+  fill: #ecff71;
 }
 .handling .icon-shuffle {
   width: 20px;
   height: 20px;
   fill: white;
-  stroke: #ff874a;
+  stroke: #f6ffbd;
 }
 .handling .icon-shuffle:hover {
-  stroke: #ffba97;
+  stroke: white;
 }
 .handling .icon-shuffle:active {
-  stroke: #fd5500;
+  stroke: #ecff71;
 }
 .handling-repeat.active svg {
-  fill: #a43700;
+  fill: #aebf41;
 }
 .handling-sound {
   position: relative;
@@ -287,7 +287,7 @@ svg {
   position: absolute;
   left: 0;
   top: 100%;
-  background: #ff874a;
+  background: #f6ffbd;
   padding: 15px;
   border-radius: 6px;
 }
